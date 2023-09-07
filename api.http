@@ -1,0 +1,29 @@
+### Get all products
+GET http://localhost:8085/api/v1/products
+
+### Get custom count of products using query params
+GET http://localhost:8085/api/v1/products?size=5
+
+### Get only one product.
+GET http://localhost:8085/api/v1/products/da62a8d3-05f2-4c74-b943-d7e1272761be
+
+### Create a product
+POST http://localhost:8085/api/v1/products
+Content-Type: application/json
+
+{
+    "name": "The Godfather",
+    "price": 228,
+    "image": "htpps://img.fruugo.com/product/4/49/14441494_max.jpg"
+}
+
+### Updated a product
+PATCH  http://localhost:8085/api/v1/products/da62a8d3-05f2-4c74-b943-d7e1272761be
+Content-Type: application/json
+
+{
+    "name": "Napolitana pizza",
+}
+
+### Delete a product 
+DELETE http://localhost:8085/api/v1/products/da62a8d3-05f2-4c74-b943-d7e1272761be
