@@ -1,8 +1,8 @@
 import express, { json } from 'express'
 
-import { productsRouter } from './app/routes/products.js'
-import { boomErrorHandler, errorHandler } from './app/middleware/error.js'
-import { corsMiddleware } from './app/middleware/cors.js'
+import { productsRouter } from './routes/products.js'
+import { boomErrorHandler, errorHandler } from './middleware/error.js'
+import { corsMiddleware } from './middleware/cors.js'
 
 const app = express()
 const router = express.Router()

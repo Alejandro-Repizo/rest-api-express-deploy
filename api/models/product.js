@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto'
-import { readJSON } from '../../utils.js'
+import { readJSON } from '../utils.js'
 
-const products = readJSON('./app/data/products.json')
+const products = readJSON('./data/products.json')
 
 export class ProductModel {
   static async getAll ({ size }) {

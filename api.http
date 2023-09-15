@@ -22,7 +22,7 @@ PATCH  http://localhost:8085/api/v1/products/da62a8d3-05f2-4c74-b943-d7e1272761b
 Content-Type: application/json
 
 {
-    "name": "Napolitana pizza",
+    "name": "Napolitana pizza"
 }
 
 ### Delete a product 
