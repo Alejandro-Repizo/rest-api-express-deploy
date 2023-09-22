@@ -1,7 +1,10 @@
 import { randomUUID } from 'node:crypto'
-import { readJSON } from '../utils.js'
+import { readFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const products = readJSON('./data/products.json')
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const products = JSON.parse(await readFile(path.resolve(__dirname, 'data/products.json')))
 
 export class ProductModel {
   static async getAll ({ size }) {
